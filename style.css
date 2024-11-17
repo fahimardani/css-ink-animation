@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #000;
+  
+}
+main {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(frieren.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(ink.gif);
+    mask-size: cover;
+    mask-position: center;
+}
+h1 {
+    width: 8ch; 
+    text-shadow: 2px 2px gold;
+    color: #959;
+    text-wrap: wrap;
+}
